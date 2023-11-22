@@ -1,0 +1,29 @@
+#ifndef Nor_hpp_
+#define Nor_hpp_
+
+#include "IComponent.hpp"
+
+namespace cs
+{
+	namespace component
+	{
+
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		class Nor : public Component<3>
+		{
+		public:
+			Nor(const std::string &name = "internal");
+			~Nor();
+
+			Tristate ComputeImpl(std::size_t pin = 1);
+
+		private:
+		};
+
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	}
+}
+
+#endif

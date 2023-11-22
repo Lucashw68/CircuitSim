@@ -1,0 +1,30 @@
+#ifndef C4008_hpp_
+#define C4008_hpp_
+
+#include "IComponent.hpp"
+#include "Xor.hpp"
+#include "Or.hpp"
+#include "And.hpp"
+
+namespace cs
+{
+	namespace component
+	{
+
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		class C4008 : public Component<16, 20>
+		{
+		public:
+			C4008(const std::string &);
+			~C4008();
+
+		private:
+		};
+
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	}
+}
+
+#endif

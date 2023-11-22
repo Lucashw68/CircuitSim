@@ -1,0 +1,29 @@
+#ifndef And_hpp_
+#define And_hpp_
+
+#include "IComponent.hpp"
+
+namespace cs
+{
+	namespace component
+	{
+
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		class And : public Component<3>
+		{
+		public:
+			And(const std::string &name = "internal");
+			~And();
+
+			Tristate ComputeImpl(std::size_t pin = 1);
+
+		private:
+		};
+
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	}
+}
+
+#endif

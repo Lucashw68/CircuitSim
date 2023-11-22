@@ -1,0 +1,12 @@
+# 4 pins NAND #
+
+.chipsets:
+input a
+input b
+input c
+output s
+
+.links:
+a:1	Nand4:1
+b:1	Nand4:2
+s:1	Nand4:3

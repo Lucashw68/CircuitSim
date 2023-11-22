@@ -1,0 +1,29 @@
+#ifndef Xor_hpp_
+#define Xor_hpp_
+
+#include "IComponent.hpp"
+
+namespace cs
+{
+	namespace component
+	{
+
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		class Xor : public Component<3>
+		{
+		public:
+			Xor(const std::string &name = "internal");
+			~Xor();
+
+			Tristate ComputeImpl(std::size_t pin = 1);
+
+		private:
+		};
+
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	}
+}
+
+#endif

@@ -1,0 +1,29 @@
+#ifndef Output_hpp_
+#define Output_hpp_
+
+#include "IComponent.hpp"
+
+namespace cs
+{
+	namespace component
+	{
+
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		class Output : public Component<1>
+		{
+		public:
+			Output(const std::string &name);
+			~Output();
+
+			Tristate ComputeImpl(std::size_t pin = 1);
+
+		private:
+		};
+
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	}
+}
+
+#endif

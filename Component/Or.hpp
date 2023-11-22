@@ -1,0 +1,29 @@
+#ifndef Or_hpp_
+#define Or_hpp_
+
+#include "IComponent.hpp"
+
+namespace cs
+{
+	namespace component
+	{
+
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		class Or : public Component<3>
+		{
+		public:
+			Or(const std::string &name = "internal");
+			~Or();
+
+			Tristate ComputeImpl(std::size_t pin = 1);
+
+		private:
+		};
+
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	}
+}
+
+#endif
